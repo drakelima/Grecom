@@ -1,0 +1,965 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* config geral*/ 
+/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+
+/* =============================================================================
+   HTML display definitions
+   ========================================================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+[hidden] {
+    display: none;
+}
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+html {
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+
+body {
+    margin: 0;
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+
+body,button,input,select,textarea {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+
+a:focus {
+    /*outline: thin dotted;*/
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+}
+a{
+	color: #666666;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+
+b, strong { 
+    font-weight: bold; 
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ol, ul {
+	list-style: none outside none;
+}
+
+li {
+	vertical-align:top;
+	line-height:1.2em
+}
+
+li a, li span {
+	line-height:1.2em
+}
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+img {
+	border: none;
+}
+
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+
+form {
+    margin: 0;
+}
+
+button, input,select,textarea {
+    font-size: 100%; /* 1 */
+   	margin: 0 10px 0 15px; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+/* 
+ * Remove most spacing between table cells
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.menu ul {
+    float: left;
+    height:auto;
+    width: 100%;
+}
+
+.menu .li-menu {
+	float:left;
+	padding: 16px 20px 0 0;
+	position: relative;
+	z-index: 20;
+}
+
+.menu .li-menu-nav { 
+	float:left;
+	padding: 16px 50px 0 0;
+	position: relative;
+	z-index: 20;
+}
+
+.menu .divisor{
+	color:#CCC;
+	font-size:10px;
+}
+
+.menu .item-menu {
+	float: left;
+	height: auto;
+	padding: 10px 0 10px 0;
+}
+
+.menu {
+    margin:0;
+	font-size:11px;
+}
+
+.menu .item-menu {
+	cursor:default;
+}
+
+/*outras*/
+.texto{
+	line-height:20px;
+	font-size:12px;
+	text-align:justify;
+}
+
+/* body */
+body {
+	display: block;
+	min-width: 990px;
+	width: 100%;
+	min-height: auto;
+	_height: 990x;
+	font-family:"Tahoma",Verdana,Arial,Helvetica,sans-serif;
+	font-size:12px;
+	color: #666666;
+	background: #ffffff;
+}
+
+body a, body img, body input {
+	outline: 0;
+}
+
+/* config container*/
+#pagina{
+	display: block;
+	position:relative;
+	height:auto;
+	width:auto;
+}
+
+	/*hover do menu rápido*/
+	#pagina a:hover{
+		color:#ba061b; /*Padrão*/
+	}
+	
+	#pagina.azul a:hover{
+		color:#17a7ec; /*azul*/
+	}
+	
+	#pagina.amarelo a:hover{
+		color:#d1b414; /*amarelo*/
+	}
+	
+	#pagina.laranja a:hover{
+		color:#ff8c00; /*laranja*/
+	}
+	
+	#pagina.lilas a:hover{
+		color:#9747cf; /*lilas*/
+	}
+	
+	#pagina.verde a:hover{
+		color:#0fae53; /*verde*/
+	}
+
+/*  ==========================================================================================
+	Cabeçalho
+    ==========================================================================================  */
+#topo{
+		display: block;
+		position:relative;
+		height:270px;
+		width: 100%;
+}	
+	#topo #cabecalho{
+		display:block;
+		padding-top:10px;
+		background:url(../img/bg_header.png) repeat-x center top;
+		height:210px;
+	}
+		/*cabeçalho*/
+		#pagina #topo #cabecalho #cabecalho-centro{
+			background-color:transparent;
+			width:990px;
+			height:200px;
+			margin:auto;
+		}
+		
+
+			#pagina #cabecalho #cabecalho-centro #logo { /*logo padrão*/
+				display:block;
+				position:absolute;
+				width:350px;
+				height:200px;
+				float:left;
+				background:url(../img/bg_logo/logo.png) no-repeat center top;
+			}
+			
+			#pagina.azul #cabecalho #cabecalho-centro #logo { /*logo azul*/
+				background:url(../img/bg_logo/bg_logo_azul.png) no-repeat center top;
+			}
+			
+			#pagina.amarelo #cabecalho #cabecalho-centro #logo { /*logo amarelo*/
+				background:url(../img/bg_logo/bg_logo_amarelo.png) no-repeat center top;
+			}
+			
+			#pagina.laranja #cabecalho #cabecalho-centro #logo { /*logo laranja*/
+				background:url(../img/bg_logo/bg_logo_laranja.png) no-repeat center top;
+			}
+			
+			#pagina.verde #cabecalho #cabecalho-centro #logo { /*logo verde*/
+				background:url(../img/bg_logo/bg_logo_verde.png) no-repeat center top;
+			}
+			
+			#pagina.lilas #cabecalho #cabecalho-centro #logo { /*logo lilas*/
+				background:url(../img/bg_logo/bg_logo_lilas.png) no-repeat center top;
+			}
+	
+			#pagina #cabecalho #cabecalho-centro #topo-lateral-direita {
+				position:relative;
+				display:block;
+				width:400px;
+				height:190px;
+				float:right;
+				margin: 10px 0 0 0;
+			}
+			
+				#pagina #cabecalho #cabecalho-centro #topo-lateral-direita #menu-rapido{
+					float:left;
+					height:auto;
+					width:auto;
+					margin:0 0 0 57px;
+				}
+
+				#topo-lateral-direita #logo_UFRN{
+					float:right;
+					width: 68px;
+					height:24px;
+					margin:10px 0 0 0;
+				}
+						
+				/*layouter busca*/
+				#topo-lateral-direita #busca{
+					position:absolute;
+					width: 299px;
+					height:auto;
+					float:right;
+					margin:90px 0 0 100px;
+				}
+			
+					#busca .bg_busca { /*padrão*/
+						float: left;
+						width: 240px;
+						height: 39px;
+						background: transparent url(../img/bg_busca.png) no-repeat left top;
+						margin: -4px 0 0 0;
+					}
+					
+					#busca .bg_busca{
+						background: transparent url(../img/bg_busca.png) no-repeat left top;
+					}
+
+					.bg_busca input.buscar {
+						float: left;
+						width: 215px;
+						height: 14px;
+						padding: 14px 0;
+						background: transparent;
+						border: none;
+						font-size: 11px;
+						color: #666666;
+						overflow: hidden;	
+					}
+				
+					#pagina #cabecalho #cabecalho-centro #topo-lateral-direita #busca .bt_buscar {/*padrão*/
+						float: left;
+						margin:0;
+						background:url(../img/bg_btn_busca/bg_btn_buscar.png) no-repeat;
+						border: none;
+						cursor:pointer;
+						height:35px;
+						width:59px;
+					}
+					
+					#pagina.azul #cabecalho #cabecalho-centro #topo-lateral-direita #busca .bt_buscar {
+						background:url(../img/bg_btn_busca/bg_btn_buscar_azul.png) no-repeat;
+					}
+					
+					#pagina.amarelo #cabecalho #cabecalho-centro #topo-lateral-direita #busca .bt_buscar {
+						background:url(../img/bg_btn_busca/bg_btn_buscar_amarelo.png) no-repeat;
+					}
+					
+					#pagina.laranja #cabecalho #cabecalho-centro #topo-lateral-direita #busca .bt_buscar {
+						background:url(../img/bg_btn_busca/bg_btn_buscar_laranja.png) no-repeat;
+					}
+					
+					#pagina.lilas #cabecalho #cabecalho-centro #topo-lateral-direita #busca .bt_buscar {
+						background:url(../img/bg_btn_busca/bg_btn_buscar_lilas.png) no-repeat;
+					}
+					
+					#pagina.verde #cabecalho #cabecalho-centro #topo-lateral-direita #busca .bt_buscar {
+						background:url(../img/bg_btn_busca/bg_btn_buscar_verde.png) no-repeat;
+					}
+
+/*  ==========================================================================================
+	Navegação
+    ==========================================================================================  */
+	#topo #nav{
+		display:block;
+		position:relative;
+		background-color:#373435;
+		height:50px;
+		width:100%;
+		border-top:solid #000 1px;
+	}
+		#nav #menu{
+			display:block;
+			position:relative;
+			width: 990px;
+			height:45px;
+			margin: 0 auto;
+		}
+
+
+			#nav #menu ul {
+				display:block;
+				left:0;
+				height:auto;
+				width: 100%;
+				height:100%;
+			}
+			
+			#nav #menu ul .li-menu {
+				display:inline-block;
+				left:0;
+				width:auto;
+				margin:15px 52px 0 0;
+			}
+			
+			#nav #menu ul .li-menu-ultimo {
+				display:inline-block;
+				right:0;
+				margin:15px 0 0 0;
+			}
+			
+			#menu a{
+				color:#E5E5E5;
+			}
+		
+			#menu .area-acoes a:hover{
+				color:#66cc92;
+			}
+			
+			#menu .area-eventos a:hover{
+				color:#77c8ed;
+			}
+			
+			#menu .area-publicações a:hover{
+				color:#d1c57d;
+			}
+			
+			#menu .area-projetos a:hover{
+				color:#d1c57d;
+			}
+			
+			#menu .area-galerias a:hover{
+				color:#ffba66;
+			}
+			
+			#menu .area-equipe a:hover{
+				color:#ed5163;
+			}
+			
+			#menu .area-amigos a:hover{
+				color:#d548b5;
+			}
+			
+			#menu .area-nucleos a:hover{
+				color:#d548b5; 
+			}
+			
+				#menu .sub-menu{
+					display:none;
+    				position:absolute;
+					height: auto; 
+    		    	width: auto;
+					padding-top:20px;
+					z-index:20;
+				}
+				
+				#menu .sub-menu a{
+					color:#666;
+				}
+					
+					#nav #menu .sub-menu .sub-top{
+						display:block;
+						position: absolute;
+						background:url(../img/subTop.png);
+						width:40px;
+						height:18px;
+						margin:-20px 0 0 5px;
+						z-index:100;
+					}
+					
+					#nav #menu .sub-menu ul{
+						display:block;
+						position:relative;
+						border:solid #f2f2f2 4px;
+						background:#FFF;
+						min-width:150px;
+						width:auto;
+						height:auto;
+						margin:-10px 0 0 0;
+						border-radius: 1em;
+					}
+						#nav #menu .sub-menu ul li{
+							margin:5px 0 0 25px;
+							padding:5px;
+						}
+						
+						/*Marcadores dos submenus*/
+						#nav #menu .sub-menu ul.marcador-verde li, .sub-menu ul li.marcador-verde {
+							list-style-image:url(../img/menu_marcadores/marcador_verde.png) !important;/*verde*/
+						}
+						
+						#nav #menu .sub-menu ul.marcador-azul li, #nav #menu .sub-menu ul li.marcador-azul {
+							list-style-image:url(../img/menu_marcadores/marcador_azul.png) !important;/*azul*/
+						}
+						
+						#nav #menu .sub-menu ul.marcador-amarelo li, #nav #menu .sub-menu li.marcador-amarelo {
+							list-style-image:url(../img/menu_marcadores/marcador_amarelo.png) !important;/*amarelo*/
+						}
+						
+						#nav #menu .sub-menu ul.marcador-laranja li, #nav #menu .sub-menu ul li.marcador-laranja {
+							list-style-image:url(../img/menu_marcadores/marcador_laranja.png) !important;/*laranja*/
+						}
+						
+						#nav #menu .sub-menu ul.marcador-vermelho li,#nav #menu  .sub-menu ul li.marcador-vermelho {
+							list-style-image:url(../img/menu_marcadores/marcador_vermelho.png) !important;/*vermelho*/
+						}
+						
+						#nav #menu .sub-menu ul.marcador-lilas li,#nav #menu  .sub-menu ul li.marcador-lilas {
+							list-style-image:url(../img/menu_marcadores/marcador_lilas.png) !important;/*lilas*/
+						}					
+	
+		#pagina #topo #nav #barra-sessao{
+			display:block;
+			position:relative;
+			background:#f2f2f2;
+			height:5px;
+		}
+		
+			#pagina #topo #nav #barra-sessao .barra-sessao-interna{ /* padrão*/
+				display:block;
+				position:relative;
+				width:990px;
+				height:100%;
+				margin: 0 auto;
+				background:#ba061b;
+				
+			}
+		
+				#pagina.azul #topo #nav #barra-sessao .barra-sessao-interna{/*sessão azul*/
+					background:#17a7ec;
+				}
+				
+				#pagina.amarelo #topo #nav  #barra-sessao .barra-sessao-interna{/*sessão amarelo*/
+					background:#d1b414;
+				}
+				
+				#pagina.laranja #topo #nav  #barra-sessao .barra-sessao-interna{/*sessão laranja*/
+					background:#ff8c00;
+				}
+				
+				#pagina.lilas #topo #nav  #barra-sessao .barra-sessao-interna{/*sessão lilas*/
+					background:#9747cf;
+				}
+				
+				#pagina.verde #topo #nav  #barra-sessao .barra-sessao-interna{/*sessão verde*/
+					background:#0fae53;
+				}
+		
+
+		
+			
+/*  ==========================================================================================
+	CORPO
+    ==========================================================================================  */
+	#pagina #corpo{
+		display:block;
+		position:relative;
+		background:#fff;
+		min-height:500px;
+		height: auto;
+		width:100%;
+		margin-bottom:20px;
+	}
+	
+		#pagina #corpo #centro-corpo{
+			display:block;
+			position:relative;
+			min-height:500px;
+			height: auto;
+			width:990px;
+			margin:auto;		
+		}
+	
+			#pagina #corpo #centro-corpo #migalha{
+				display:block;
+				position:relative;
+				height: 30px;
+				width:100%;
+				border-bottom:#d9d9d9 1px solid;
+				padding: 15px 0 0 0;
+			}
+	
+				#pagina #corpo #centro-corpo #migalha a:hover{
+					text-decoration:underline;
+				}
+	
+			#pagina #corpo #centro-corpo #conteudo{
+				display:block;
+				position:relative;
+				height: auto;
+				width:100%;
+				padding: 20px 0 0 0;
+			}
+			
+				#pagina #corpo #centro-corpo #conteudo em{
+					font-size:11px;
+				}
+					
+				/*configure a*/
+				#pagina #corpo #centro-corpo #conteudo p a{
+					color:#ba061b;/*padrão*/
+				}
+				
+				#pagina.azul #corpo #centro-corpo #conteudo p a{
+					color:#17a7ec;/*azul*/
+				}
+				
+				#pagina.amarelo #corpo #centro-corpo #conteudo p a{
+					color:#d1b414;/*amarelo*/
+				}
+				
+				#pagina.laranja #corpo #centro-corpo #conteudo p a {
+					color:#ff8c00;/*laranja*/
+				}
+				
+				#pagina.lilas #corpo #centro-corpo #conteudo p a{
+					color:#9747cf;/*lilas*/
+				}
+				
+				#pagina.verde #corpo #centro-corpo #conteudo p a{
+					color:#0fae53;/*verde*/
+				}
+				
+				#pagina #corpo #centro-corpo #conteudo a:hover{
+					text-decoration:underline;
+				}
+				
+				/*configure titulo*/
+				#pagina #corpo #centro-corpo #conteudo h1,#pagina #corpo #centro-corpo #conteudo h2,#pagina #corpo #centro-corpo #conteudo h3{
+					color:#ba061b;/*padrão*/
+					font-size:24px;
+					font-weight:500;
+				}
+				
+				#pagina.azul #corpo #centro-corpo #conteudo h1,#pagina.azul #corpo #centro-corpo #conteudo h2,#pagina.azul #corpo #centro-corpo #conteudo h3{
+					color:#17a7ec;/*azul*/
+				}
+				
+				#pagina.amarelo #corpo #centro-corpo #conteudo h1,#pagina.amarelo #corpo #centro-corpo #conteudo h2,#pagina.amarelo #corpo #centro-corpo #conteudo h3{
+					color:#d1b414;/*amarelo*/
+				}
+				
+				#pagina.laranja #corpo #centro-corpo #conteudo h1,#pagina.laranja #corpo #centro-corpo #conteudo h2,#pagina.laranja #corpo #centro-corpo #conteudo h3 {
+					color:#ff8c00;/*laranja*/
+				}
+				
+				#pagina.lilas #corpo #centro-corpo #conteudo h1,#pagina.lilas #corpo #centro-corpo #conteudo h2,#pagina.lilas #corpo #centro-corpo #conteudo h3{
+					color:#9747cf;/*lilas*/
+				}
+				
+				#pagina.verde #corpo #centro-corpo #conteudo h1,#pagina.verde #corpo #centro-corpo #conteudo h2,#pagina.verde #corpo #centro-corpo #conteudo h3{
+					color:#0fae53;/*verde*/
+				}
+			
+				/*config paragrafo*/
+				#pagina #corpo #centro-corpo #conteudo p{
+					padding:15px 0 0 0;
+					text-align:justify;
+					line-height:22px;
+				}
+				
+				/*config lista*/
+				#pagina #corpo #centro-corpo #conteudo ul{
+					margin:15px 30px 0 30px;
+				}
+				
+				#pagina #corpo #centro-corpo #conteudo ul li{
+					list-style: none;
+					line-height:22px;
+					padding:5px 0 5px 13px;
+				}
+
+				/*Marcadores de listas*/
+				#pagina #corpo #centro-corpo #conteudo ul li{/*padrão*/
+					background: transparent url(../img/marcador-li-vermelho.png) no-repeat scroll 0px 14px;
+				}
+
+				#pagina.azul #corpo #centro-corpo #conteudo ul li{/*padrão*/
+					background: transparent url(../img/marcador-li-azul.png) no-repeat scroll 0px 14px !important;
+				}
+				
+				#pagina.amarelo #corpo #centro-corpo #conteudo ul li{
+					background: transparent url(../img/marcador-li-amarelo.png) no-repeat scroll 0px 14px !important;
+				}
+				
+				#pagina.laranja #corpo #centro-corpo #conteudo ul li{
+					background: transparent url(../img/marcador-li-laranja.png) no-repeat scroll 0px 14px !important;
+				}
+				
+				#pagina.lilas #corpo #centro-corpo #conteudo ul li{
+					background: transparent url(../img/marcador-li-lilas.png) no-repeat scroll 0px 14px !important;
+				}
+				
+				#pagina.verde #corpo #centro-corpo #conteudo ul li{
+					background: transparent url(../img/marcador-li-verde.png) no-repeat scroll 0px 14px !important;
+				}
+
+				#pagina #corpo #centro-corpo #conteudo ul li a:hover{
+					text-decoration:underline;
+				}
+
+				#pagina #corpo #centro-corpo #conteudo.conteudo-eventos ul li a:hover{
+					text-decoration:none;
+				}
+
+				/*configure img*/
+				#pagina #corpo #centro-corpo #conteudo .img-texto{
+					float: right;
+					min-height: 125px;
+					width: 155px;
+					margin: 20px 0 10px 10px;
+					text-align:center;
+				}
+
+					#pagina #corpo #centro-corpo #conteudo .img-texto img{
+						display: block;
+						max-height: 125px;
+						max-width: 145px;
+						margin:0 auto;
+						padding:5px;
+					}
+
+					#pagina #corpo #centro-corpo #conteudo .img-texto label {
+						display: block;
+						padding: 0px 3px 3px;
+						font-size:10px;
+					}
+
+
+
+/*  ==========================================================================================
+	LINK PARA SUBIR A PÁGINA
+    ==========================================================================================  */
+	#topo-link{
+		display: block;	
+		position:relative;
+		background-color:#fff;
+		height:25px;
+		width:990px;
+		margin:auto;
+	}
+
+		#topo-link .topo-link{
+			float:right;
+			width:80px;
+			border-top:solid #f2f2f2 5px;
+			border-left:solid #f2f2f2 5px;
+			border-right:solid #f2f2f2 5px;
+			text-align:center;
+			height:26px;
+			border-radius: 1em;
+			padding:3px;
+		}
+
+			#topo-link .topo-link img {
+				margin-left: 6px;
+			}
+		
+/*  ==========================================================================================
+	RODAPE
+    ==========================================================================================  */
+	#pagina #rodape{
+		position:relative;
+		display: block;
+		width: 100%;
+		height:290px;		
+	}
+		
+		/* BARRA 1 DO RODAPÉ*/		
+		#pagina #rodape #rodape-barra1{	/*padrão*/
+			display:block;
+			position:relative;
+			height:200px;
+			border-top:solid #f2f2f2 5px;
+			color:#FFFFFF;
+			background:url(../img/bg_rodape/bg_rodape_vermelho.png) repeat-x center bottom;
+		}
+			
+			#pagina.verde #rodape #rodape-barra1{	/*bg verde*/
+				background:url(../img/bg_rodape/bg_rodape_verde.png) repeat-x center bottom;
+			}
+			
+			#pagina.azul #rodape #rodape-barra1{/*bg azul*/
+				background:url(../img/bg_rodape/bg_rodape_azul.png) repeat-x center bottom;
+			}
+			
+			#pagina.amarelo #rodape #rodape-barra1{	/*bg amarelo*/
+				background:url(../img/bg_rodape/bg_rodape_amarelo.png) repeat-x center bottom;
+			}
+			
+			#pagina.laranja #rodape #rodape-barra1{	/*bg laranja*/
+				background:url(../img/bg_rodape/bg_rodape_laranja.png) repeat-x center bottom;
+			}
+			
+			#pagina.lilas #rodape #rodape-barra1{	/*bg lilas*/
+				background:url(../img/bg_rodape/bg_rodape_lilas.png) repeat-x center bottom;
+			}
+			
+			#rodape-barra1 #rodape-centro-barra1{
+				display:block;
+				position:relative;
+				background-color:transparent;
+				height:200px;
+				width:990px;
+				margin:auto;
+			}
+				
+				#rodape-centro-barra1 #grecom{
+					display:block;
+					position:absolute;
+					font-size:12px;
+					line-height:25px;
+					width:400px;
+					height:180px;
+					padding:20px 0 0 0;
+				}
+
+					#rodape-centro-barra1 #grecom a {
+						color:#FFF;
+					}
+
+					#rodape-centro-barra1 #grecom a.maior {
+						font-weight:bold;
+						font-size:13px;
+					}
+
+						#rodape-centro-barra1 #grecom a:hover {
+							text-decoration: underline;
+						}
+	
+						#rodape-centro-barra1 #grecom a:hover.maior {
+							text-decoration: none;
+						}
+
+				#rodape-centro-barra1 #redes_sociais {
+					display:block;
+					position:absolute;
+					width:auto;
+					height:auto;
+					right:0;
+					padding:20px 0 0 0;
+				}
+				
+				#rodape-centro-barra1 #vinte_anos{
+					display:block;
+					position:absolute;
+					width:295px;
+					height:76px;
+					right:0;
+					margin:90px 0 0 0;
+				}
+				
+				.menu .li-menu-redes-sociais  {
+						float:right;
+						padding: 0 0 0 20px;
+						position: relative;
+						z-index: 20;
+					}
+					
+		
+		/* BARRA 2 DO RODAPÉ*/					
+		#rodape #rodape-barra2{
+			display:block;
+			position:relative;
+			background:#eeeeee;
+			height:100px;
+			font-size:11px;
+			color: #666666;
+		}
+			#rodape-barra2 #rodape-centro-barra2{
+				display:block;
+				position:relative;
+				height:100px;
+				width:990px;
+				margin:auto;
+			}
+			
+			/*MENU RÁPIDO*/
+			#rodape-centro-barra2 #rodape-menu-rapido{
+				display:block;
+				position:relative;
+				height:46px;
+				width:100%;
+				border-bottom:solid #DFDFDF 1px;
+				padding:2px 0 0 0;
+			}
+					#rodape-menu-rapido a:hover{
+						color:#ba061b;
+					}
+					
+			
+			/* Copyright E CREDITOS*/
+			#rodape-centro-barra2 #creditos{
+				display:block;
+				position:relative;
+				height:50px;
+				width:100%;			
+			}
+			
+			#creditos .direitos{
+					position:relative;
+					width: auto;
+					float:left;
+					margin: 20px 0 0 0;
+			}
+
+			.direitos a {
+				color: #666666;
+			}
+
+			.direitos a:hover {
+				text-decoration: underline;
+			}
+			
+		   #rodape-centro-barra2 .desenvolvido {
+				float: right;
+				margin: 15px 0 0 0;;
+				font-size: 11px;
+				font-weight: bold;
+			}
+
+			.desenvolvido label {
+				margin-right: 5px;
+			}
+
+			.desenvolvido a {
+				border: none;
+				text-decoration: none;
+			}

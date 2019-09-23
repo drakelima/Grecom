@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* estilo geral para o texto das internas (página extra) */
+#pagina #corpo #centro-corpo #conteudo p img {
+	float: right;
+	margin: 6px 10px;
+}
+
+/*Config pag noticias*/
+/*rodape da noticia interna*/
+#pagina #corpo #centro-corpo #conteudo .rodape-noticia {
+	display: block;
+	height: 16px;
+	width: 100%;
+	margin: 30px 0 20px;
+	padding: 5px 0 0;
+	border-top: 1px dotted #D5EEF6;
+	font-size: 10px;
+}
+
+	#pagina #corpo #centro-corpo #conteudo .rodape-noticia .compartilhar-texto {
+		float: right;
+		text-align: right;
+		height: auto;
+		width: auto;
+	}
+
+		#pagina #corpo #centro-corpo #conteudo .rodape-noticia .compartilhar-texto a {
+			vertical-align: middle;
+		}
+		
+/*  ==========================================================================================
+	CONFIGURAÇÃO DE PAGINA DE EVENTOS
+    ==========================================================================================  */	
+
+#pagina #corpo #centro-corpo #conteudo .img-evento {
+	float: left;
+	margin: 22px 10px 10px 0;
+}
+
+	#pagina #corpo #centro-corpo #conteudo .img-evento a img {
+		max-width:150px;
+	}
+
+#pagina #corpo #centro-corpo #conteudo ul.listagem-evento {
+    display: block;
+}
+
+	#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li.li-listagem {
+		display: block;
+		height: auto;
+		overflow: hidden;
+		width: 100%;
+		background: none !important;
+		padding: 5px;
+		padding-bottom:20px;
+	}
+
+		#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li.li-listagem .mes{
+			display: block;
+			color: #008131;
+			font-size: 16px;
+			font-weight:200;/*ou bold*/
+			height: auto;
+			margin: 0 0 10px;
+			text-transform: uppercase;
+			width: auto;
+		}
+
+		#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li ul.agenda {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+
+			#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li ul.agenda li {
+				display: block;
+				width: 88%;
+				height: auto;
+				background-image: none !important;
+				border-bottom: 1px solid #FFFFFF;
+				cursor: pointer;
+				height: auto;
+				overflow: hidden;
+				padding: 10px 35px;
+			}
+
+			#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li ul.agenda li.cor1 {
+				background: #E5F7CC !important;
+			}
+
+			#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li ul.agenda li.cor2 {
+				background: #A3D18B !important;
+			}
+
+				#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li ul.agenda li a .periodo {
+					display: inline-block;
+					width: 20%;
+					height: auto;
+					margin-right: 15px;
+					color: #3D3B36;
+					line-height: 22px;
+					font-size: 15px;
+					font-weight:bold;
+					text-align: center;
+					vertical-align: top;
+				}
+
+				#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li ul.agenda li a .nome {
+					display: inline-block;
+					width: 77%;
+					height: auto;
+					margin-left: -4px;
+					color: #333333;
+					line-height: 22px;
+					font-size: 12px;
+					text-align: left;
+					vertical-align: top;
+				}
+
+				#pagina #corpo #centro-corpo #conteudo ul.listagem-evento li ul.agenda li a:hover .nome {
+					text-decoration:underline;
+				}
+
+
+/*  ==========================================================================================
+	CONFIGURAÇÃO DE PAGINA CONTATOS
+    ==========================================================================================  */	
+#pagina #corpo #centro-corpo #conteudo .formulario{
+	display:block;
+	position:relative;
+	height:auto;
+	width:490px;
+	margin:35px auto 0;
+}
+
+#pagina #corpo #centro-corpo #conteudo .formulario #mensagemEnvio {
+	display: block;
+	position:relative;
+	background:#f1f1f1;
+	border-radius:1em;
+	border: 2px solid #d6d6d6;
+	color: #EF3828;
+	font-weight: bold;
+	height:30px;
+	text-align: center;
+	padding: 20px 0 0 0;
+	width: 487px;
+	margin-bottom:20px;
+}
+
+#pagina #corpo #centro-corpo #conteudo .formulario .area-input-contato {
+	display:block;
+	position:relative;
+	height:35px;
+	width:100%;
+	margin:0 0 10px 0;
+}
+
+#pagina #corpo #centro-corpo #conteudo .formulario .area-contato-area {
+	display:block;
+	position:relative;
+	height:160px;
+	width:100%;
+	margin: 0 0 10px 0;
+}
+
+#pagina #corpo #centro-corpo #conteudo .formulario .area-contato-button {
+	display:block;
+	width:100%;
+	height:40px;
+}
+
+	.formulario label{
+		float:left;
+		line-height:35px;
+	}
+
+	.formulario button {
+		float:right;
+		height: 40px;
+		width: 60px;
+		cursor:pointer;
+		border:none;
+		margin-right:0px;
+	}
+	
+	.formulario .btn_limpar{
+		background:url(../img/bg_btn_limpar.png) no-repeat center;
+	}
+	
+	.formulario .btn_enviar{
+		background:url(../img/bg_btn_enviar.png) no-repeat center;
+	}
+
+	.formulario input, .formulario select {
+		background: transparent;
+		float: right;
+		height:20px;
+		width:405px;
+		border-radius:0.5em;
+		border:solid #dedede 1px;
+		margin: 5px 0 0 0;
+		padding:3px;
+		color:#333;
+	}
+
+	.formulario input:hover {
+		border:solid #CCC 1px; /* #9bddf7 */
+	}
+
+	.formulario input:focus {
+		border:solid #CCC  1px;
+	}
+
+	.formulario select:hover {
+		border:solid #CCC 1px; /* #9bddf7 */
+	}
+
+	.formulario select:focus {
+		border:solid #CCC 1px;
+	}
+
+	.formulario textarea {
+		background: transparent;
+		float: right;
+		border-radius:0.5em;
+		border:solid #dedede 1px;
+		height:140px;
+		width:400px;
+		max-height:589px;
+		max-width:589px;
+		margin:5px 0 0 0;
+		padding:5px;
+	}
+
+	.formulario textarea:hover {
+		border:solid #CCC 1px; /* #9bddf7 */
+	}
+
+	.formulario textarea:focus {
+		border:solid #CCC 1px;
+	}
+	
+/*  ==========================================================================================
+	CONFIGURAÇÃO DE PAGINA DE AMIGOS
+    ==========================================================================================  */	
+	
+	#pagina #corpo #centro-corpo #conteudo.amigos table{
+		width: 100%;
+	}
+
+	#pagina #corpo #centro-corpo #conteudo.amigos table tbody tr td {
+		width:190px;
+		padding:10px;
+		vertical-align:top;
+	}
+
+		#pagina #corpo #centro-corpo #conteudo.amigos table tbody tr td p {
+			float:left;
+			text-align:justify;
+			line-height: 18px;
+		}
+
+		#pagina #corpo #centro-corpo #conteudo.amigos table tbody tr td img {
+			float:right;
+			max-height:200px;
+			max-width:200px;
+			vertical-align:top;
+		}
+	
+/*  ==========================================================================================
+	CONFIGURAÇÃO DE PAGINA DE PUBLICAÇÕES / LIVROS
+    ==========================================================================================  */
+	#pagina #corpo #centro-corpo #conteudo #caixa-publicacoes{
+		display:block;
+		height:auto;
+		width:100%;
+		margin:0 auto;
+		padding: 20px 0 0 0;
+	}
+	
+	#pagina #corpo #centro-corpo #conteudo #caixa-publicacoes .livro{
+		display:inline-block;
+		position:relative;
+		height:160px;
+		width:326px;
+	}
+	
+	#pagina #corpo #centro-corpo #conteudo #caixa-publicacoes .livro img{
+		display:block;
+		position:absolute;
+		height:150px;
+		width:115px;
+	}
+	
+	#pagina #corpo #centro-corpo #conteudo #caixa-publicacoes .livro .informacoes-livro{
+		display:block;
+		position:absolute;
+		height:152px;
+		width:195px;
+		right:0;
+		padding:8px 10px 0 5px;
+	}
+
+/*  ==========================================================================================
+	CONFIGURAÇÃO DE PAGINA DE PARCERIAS
+    ==========================================================================================  */
+	
+	#pagina #corpo #centro-corpo #conteudo .subtitulo{
+		display:block;
+		font-weight:bold;
+		font-size:15px;
+	}
